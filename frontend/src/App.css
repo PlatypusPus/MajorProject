@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7f6;
+  color: #1f2937;
+}
+
+#root {
+  width: 100%;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  color: #065f46;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card p {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 8px 0;
+  color: #0f766e;
+}
+
+.summary-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.summary-card li {
+  padding: 4px 0;
+}
+
+.ingestion-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.ingestion-form select,
+.ingestion-form input,
+.ingestion-form button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+}
+
+.ingestion-form button {
+  border: none;
+  background: #0f766e;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ingestion-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.chart-card {
+  grid-column: 1 / -1;
+}
+
+.error-banner {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
